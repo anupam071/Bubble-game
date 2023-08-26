@@ -87,6 +87,7 @@ body {
         max-width: 300px;
     }
     #ptop {
+        font-size:10px;
         padding: 0px 5%;
         height: 50px;
     }
