@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(131, 216, 131);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pannel {
+    overflow: hidden;
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#ptop {
+    display: flex;
+    color: white;
+    padding: 0px 30%;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(52, 150, 60);
+}
+
+.box {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 5px;
+    color: rgb(182, 23, 23);
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: rgb(10, 41, 53);
+}
+
+#pbtm  {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100% - 70px);
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #13a738;
+    color: white;
+}
+
+.bubble:hover {
+    background-color: rgb(202, 29, 29);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 414px) {
+    #pannel {
+        width: 90%;
+        max-width: 300px;
+    }
+    #ptop {
+        padding: 0px 5%;
+        height: 50px;
+    }
+    .box {
+        font-size: 14px;
+    }
+    .elem {
+        gap: 8px;
+    }
+    .bubble {
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+    }
+}
